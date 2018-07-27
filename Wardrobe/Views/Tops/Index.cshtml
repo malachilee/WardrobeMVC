@@ -9,28 +9,26 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
-    <tr>
-        <th>
+<div class="container" id="TopsIndex">
+    <div class="row">
+        <div class="col">
             @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th>
+        </div>
+        <div class="col">
             @Html.DisplayNameFor(model => model.Photo)
-        </th>
-        <th>
+        </div>
+        <div class="col">
             @Html.DisplayNameFor(model => model.Type)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Color)
-        </th>
-        <th>
+        </div>
+        <div class="col">
             @Html.DisplayNameFor(model => model.Season)
-        </th>
-        <th>
+        </div>
+        <div class="col">
             @Html.DisplayNameFor(model => model.Occasion)
-        </th>
-        <th></th>
-    </tr>
+        </div>
+        <div></div>
+    </div>
+</div>
 
 @foreach (var item in Model) {
     <tr>
